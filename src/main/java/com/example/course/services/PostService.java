@@ -28,13 +28,10 @@ public class PostService {
 	
 	public List<Post> findByTitle(String text){
 		return repo.searchTitle(text);
-<<<<<<< HEAD
 	}
 	
 	public List<Post> search(String text, Date minDate, Date maxDate){
 		maxDate = new Date(maxDate.getTime() + 24 * 60 * 60 * 1000);
 		return repo.search(text, minDate, maxDate);
-=======
->>>>>>> dd81decb504e062924caecfea22931d66c5d7705
 	}
 }
